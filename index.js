@@ -119,3 +119,5 @@ client.on('interactionCreate', async interaction => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
+
+require('http').createServer((req, res) => res.end('Bot is alive!')).listen(3000)
